@@ -1,0 +1,133 @@
+/* Styling Global */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Background halaman */
+    color: #333;
+}
+
+/* Container utama menyerupai kertas A4 di layar lebar */
+.cv-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Styling Foto Profil */
+.foto-profil {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    aspect-ratio: 1/1; /* Agar tetap kotak */
+    
+}
+
+/* Styling Header Nama */
+.nama-kandidat {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2c3e50;
+    line-height: 1.2;
+}
+
+.gelar-kandidat {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+/* Styling Judul Bagian (Kotak Abu-abu Judul) */
+.section-title {
+    background-color: #e9ecef;
+    padding: 8px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #495057;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+/* Khusus Area Kontak (Box Abu-abu Penuh) */
+.kontak-box {
+    background-color: #e9ecef;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.kontak-label {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.kontak-value {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 12px;
+    word-wrap: break-word; /* Agar email panjang tidak merusak layout */
+}
+
+/* Styling List Pengalaman & Skill */
+.job-title {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.job-year {
+    float: right;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.company-name {
+    font-weight: 600;
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+ul.job-desc {
+    padding-left: 20px;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+ul.skill-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.skill-list li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Responsive Mobile Adjustments */
+/* Aturan ini berjalan jika layar lebih kecil dari 768px (HP) */
+@media (max-width: 768px) {
+    .cv-container {
+        padding: 20px;
+        margin: 0;
+    }
+    .nama-kandidat {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .gelar-kandidat {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .job-year {
+        float: none;
+        display: block;
+    }
+}
