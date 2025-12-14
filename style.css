@@ -1,11 +1,9 @@
-/* Styling Global */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f9fa; /* Background halaman */
     color: #333;
 }
 
-/* Container utama menyerupai kertas A4 di layar lebar */
 .cv-container {
     max-width: 1000px;
     margin: 30px auto;
@@ -14,16 +12,14 @@ body {
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-/* Styling Foto Profil */
 .foto-profil {
     width: 250px;
     height: auto;
     object-fit: contain;
-    aspect-ratio: 1/1; /* Agar tetap kotak */
+    aspect-ratio: 1/1;
     
 }
 
-/* Styling Header Nama */
 .nama-kandidat {
     font-size: 2.5rem;
     font-weight: 700;
@@ -39,7 +35,6 @@ body {
     font-weight: 400;
 }
 
-/* Styling Judul Bagian (Kotak Abu-abu Judul) */
 .section-title {
     background-color: #e9ecef;
     padding: 8px 15px;
@@ -52,7 +47,6 @@ body {
     margin-top: 25px;
 }
 
-/* Khusus Area Kontak (Box Abu-abu Penuh) */
 .kontak-box {
     background-color: #e9ecef;
     padding: 20px;
@@ -70,7 +64,7 @@ body {
     font-size: 0.9rem;
     color: #555;
     margin-bottom: 12px;
-    word-wrap: break-word; /* Agar email panjang tidak merusak layout */
+    word-wrap: break-word; 
 }
 
 /* Styling List Pengalaman & Skill */
@@ -110,8 +104,6 @@ ul.skill-list li {
     font-size: 0.95rem;
 }
 
-/* Responsive Mobile Adjustments */
-/* Aturan ini berjalan jika layar lebih kecil dari 768px (HP) */
 @media (max-width: 768px) {
     .cv-container {
         padding: 20px;
@@ -130,4 +122,5 @@ ul.skill-list li {
         float: none;
         display: block;
     }
+
 }
